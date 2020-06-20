@@ -1,7 +1,7 @@
 <template>
   <div class="team">
-    <h1 class="overline grey--text ml-14" v-if="social">Redes socias de {{social.full_name}}  </h1>
     <v-container>
+      <h1 class="overline grey--text" v-if="social">Redes socias de {{social.full_name}}  </h1>
       <v-layout row wrap>
   
         <v-flex xs12 sm6 md4 lg3>

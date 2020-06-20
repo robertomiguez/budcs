@@ -36,8 +36,7 @@ export default {
           id: 'left-y-axis',
           position: 'left',
           ticks: {
-            beginAtZero: true,
-            padding: 5,
+            beginAtZero: true
           },
           gridLines: {
             display:false
@@ -49,8 +48,7 @@ export default {
           id: 'right-y-axis',
           position: 'right',
           ticks: {
-            beginAtZero: true,
-            padding: 5,
+            beginAtZero: true
           }
         })
       }

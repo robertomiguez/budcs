@@ -43,7 +43,7 @@
           />
         </v-flex>
 
-        <v-flex xs6 sm4 md3 lg2>
+        <v-flex xs12 sm6 md4 lg3>
           <CardYoutubeFollow
             v-if="social"
             :subscribers="social.youtube.subscribers"

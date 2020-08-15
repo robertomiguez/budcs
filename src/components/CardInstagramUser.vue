@@ -24,6 +24,35 @@
                 <v-list-item-title class="headline mb-1 text-center">{{followers}}</v-list-item-title>
                 <div class="overline text-center">Seguindo</div>
                 <v-list-item-title class="headline mb-1 text-center">{{following}}</v-list-item-title>
+                <v-simple-table>
+                    <template v-slot:default>
+                    <thead>
+                        <tr>
+                        <th class="text-center">Comentarios</th>
+                        <th class="text-center">Curtidas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>{{comments}}</td>
+                        <td>{{likes}}</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                        <th class="text-center">Engajamento</th>
+                        <th class="text-center">Frequencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>{{engagement}}%</td>
+                        <td>{{frequency}}</td>
+                        </tr>
+                    </tbody>
+                    </template>
+                </v-simple-table>              
+
             </v-list-item-content>
         </v-list-item>
     </v-card>
@@ -60,6 +89,22 @@ export default {
         },
         following: {
             type: Number,
+            required: true
+        },
+        comments: {
+            type: Number,
+            required: true
+        },
+        likes: {
+            type: Number,
+            required: true
+        },
+        engagement: {
+            type: Number,
+            required: true
+        },
+        frequency: {
+            type: String,
             required: true
         }
     }

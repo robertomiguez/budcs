@@ -1,4 +1,5 @@
 # BUDCS - Social Media Analytics
+Example how to retrieve information from Instagram.
 
 ## Project setup
 ```
